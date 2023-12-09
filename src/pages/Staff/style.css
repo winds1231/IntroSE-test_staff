@@ -1,0 +1,59 @@
+.Staff {
+  margin: 15px auto;
+  width: 100%;
+  max-width: 1000px;
+  border: 1px solid #ccc;
+  padding: 0;
+  overflow-x: auto;
+}
+  
+.Staff h2 {
+  text-align: center;
+  font-size: 20px;
+}
+  
+  table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+  }
+  
+  th,
+  td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    position: relative;
+    white-space: nowrap;
+  }
+  
+  td button {
+    padding: 6px 12px;
+    font-size: 14px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: inline-block;
+    white-space: nowrap;
+  }
+  
+  .staff tr:nth-child(even) {
+    background-color: #eee;
+  }
+  
+  .staff tr:last-child {
+    border-bottom: none;
+  }
+  
+  .staff td button:hover {
+    background-color: #ddd;
+  }
+  
+  .staff .red-highlight {
+    background-color: rgba(255, 0, 0, 0.25);
+    color: black;
+    border-radius: 10px;
+    border: 1px solid red;
+  }
+  

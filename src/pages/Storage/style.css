@@ -1,0 +1,58 @@
+.storage {
+  margin: 15px auto;
+  width: 100%; /* Adjusted width to fit the screen */
+  max-width: 1000px; /* Set a maximum width if needed */
+  border: 1px solid #ccc;
+  padding: 10px;
+  overflow: auto; /* Add overflow handling if content exceeds the container */
+}
+  
+  .storage h2 {
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  table {
+    width: 100%;
+    table-layout: fixed; 
+  }
+  
+  thead {
+    background-color: #16e027;
+  }
+  
+  th,
+  td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .storage ul li:nth-child(even) {
+    background-color: #eee;
+  }
+  
+  .storage ul li:last-child {
+    border-bottom: none;
+  }
+  
+  .storage ul li button:hover {
+    background-color: #ddd;
+  }
+  
+  .storage .red-highlight {
+    background-color: rgba(255, 0, 0, 0.25); /* Red color with 75% opacity */
+    color: black; 
+    border-radius: 10px;
+    border: 1px solid red;
+   
+  }
+
+
+  .storage .expired-highlight {
+    background-color: rgba(5, 254, 175, 0.25); /* Red color with 75% opacity */
+    color: black; 
+    border-radius: 10px;
+    border: 1px solid red;
+   
+  }

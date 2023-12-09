@@ -1,0 +1,58 @@
+.invoice {
+  margin: 15px auto;
+  width: 100%;
+  max-width: 1000px; /* Set a maximum width to prevent it from extending too much */
+  border: 1px solid #ccc;
+  padding: 0; /* Remove padding to ensure full width */
+  overflow-x: auto; /* Enable horizontal scrolling if table width exceeds the screen */
+}
+
+.invoice h2 {
+  text-align: center;
+  font-size: 20px;
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse; /* Ensure no spaces between table cells */
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+  position: relative;
+  white-space: nowrap; /* Prevent line breaks inside table cells */
+}
+
+
+td button {
+  padding: 6px 12px;
+  font-size: 14px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: inline-block; /* Set button as inline block */
+  white-space: nowrap; /* Prevent button text from wrapping */
+}
+.invoice ul li:nth-child(even) {
+  background-color: #eee;
+}
+
+.invoice ul li:last-child {
+  border-bottom: none;
+}
+
+.invoice ul li button:hover {
+  background-color: #ddd;
+}
+
+.invoice .red-highlight {
+  background-color: rgba(255, 0, 0, 0.25);
+  color: black;
+  border-radius: 10px;
+  border: 1px solid red;
+}
